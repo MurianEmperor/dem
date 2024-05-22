@@ -1,0 +1,11 @@
+findIdentity($id) return User::findOne(['id' => $id]);
+
+ByAccessToken($token, $type = null) return null;
+
+getId() return $this->id;
+
+getAuthKey() return null;
+
+validateAuthKey($authKey)  return false;
+
+findByUsername($username) return User::findOne(['login' => $username]);
